@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaiart Linktree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(145deg, #ff6b6b, #ff4757);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: linear-gradient(145deg, #ff6b6b, #ff4757);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 20px 20px 60px #d63a3a, -20px -20px 60px #ff7878;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .link {
+            background: linear-gradient(145deg, #ff6b6b, #ff4757);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 5px 5px 10px #d63a3a, -5px -5px 10px #ff7878;
+            position: relative;
+            overflow: hidden;
+        }
+        .link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .link:hover::before {
+            opacity: 1;
+        }
+        .link:hover {
+            transform: translateY(-3px);
+            box-shadow: 8px 8px 15px #d63a3a, -8px -8px 15px #ff7878;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Isaiart Links</h1>
+        <div class="link-container">
+            <a href="https://isaiart.com" class="link">Isaiart</a>
+            <a href="https://code.isaiart.com" class="link">Web Coding App</a>
+            <a href="https://braille.isaiart.com" class="link">English to Braille Translator</a>
+            <a href="https://thg.isaiart.com" class="link">The Hunger Games</a>
+        </div>
+    </div>
+</body>
+</html>
